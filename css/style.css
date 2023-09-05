@@ -1,0 +1,19 @@
+* {
+  font-family: sans-serif;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 35px auto 0;
+}
+
+#contact-form > * {
+  padding: 6px 10px;
+  margin-bottom: 5px;
+}
+
+#contact-form h2 {
+  text-align: center;
+}
