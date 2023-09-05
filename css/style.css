@@ -1,0 +1,73 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+  /* 0% {
+    opacity: 0;
+    background: orange;
+  }
+
+  50% {
+    opacity: .5;
+    background: blue;
+  }
+
+  100% {
+    opacity: 1;
+    background: red;
+  } */
+}
+
+ul li {
+  background-color: #777;
+  color: #fff;
+  /* transition: background-color 2s; */
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.first-li:hover {
+  background-color: orange;
+}
+
+ul li:nth-child(3) {
+  background-color: lightseagreen;
+  position: relative;
+}
+
+
+ul li:nth-child(3):hover:after {
+  content: 'some text';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 5;
+  padding: 8px 15px;
+  background: #888;
+  color: #fff;
+  animation: fadeIn .4s forwards;
+}
+
+ul li:nth-child(6):active {
+  background-color: dodgerblue;
+}
+
+ul :last-child {
+  background-color: tomato;
+}
+
+#name-input:focus {
+  background-color: darkslategray;
+  color: #fff;
+}
+
+#name-input::placeholder {
+  color: red;
+}
